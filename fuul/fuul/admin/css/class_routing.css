@@ -1,0 +1,49 @@
+
+@media print {
+    body * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.timetable {
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+
+.timetable-row {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+
+.hed {
+    background-color: #000000;
+    font-weight: bold;
+   color: white;
+}
+
+.cell {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+}
+
+.cell:last-child {
+    border-right: none;
+}
